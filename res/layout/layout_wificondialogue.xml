@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_dialogue"
+  >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_dialogue_tittle"
+        android:paddingBottom="@dimen/padding_dialogue_tittle"
+        android:id="@+id/tv_tittle_wifidialogue"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/dialoguetittle"
+       />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_dialogue_messege"
+        android:layout_marginLeft="@dimen/margin_dialogue_messege"
+        android:layout_marginRight="@dimen/margin_dialogue_messege"
+        android:background="@drawable/back_edit_dialogue"
+
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="密码"
+            android:textColor="@color/dialoguetittle"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:id="@+id/et_wifipwd"
+            android:inputType="textWebPassword"
+            android:background="@null"
+            android:textCursorDrawable="@null"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/img_wifi_pwdhiden"
+            android:clickable="true"
+            android:scaleType="center"
+            />
+    </LinearLayout>
+    <View
+        android:layout_marginTop="@dimen/margin_dialogue_btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+       />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:layout_gravity="center"
+            android:textColor="@color/dialoguetittle"
+
+            android:id="@+id/btn_cancel_dialogue"
+            />
+    <View
+    android:layout_width="1dp"
+    android:layout_height="?attr/actionBarSize"
+   />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="连接"
+            android:layout_gravity="center"
+            android:textColor="@color/dialoguetittle"
+            android:id="@+id/btn_con_dialogue" />
+
+    </LinearLayout>
+
+</LinearLayout>

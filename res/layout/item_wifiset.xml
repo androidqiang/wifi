@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/WifiName"
+        android:layout_width="@dimen/sw_half"
+        android:layout_height="wrap_content"
+        android:text="wifi名字"
+        android:layout_marginLeft="68dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lock"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/WifiLevel"
+        android:id="@+id/img_wifiwithpwd"
+        android:layout_marginRight="15dp"/>
+    <ImageView
+        android:layout_marginRight="29dp"
+        android:layout_marginTop="@dimen/top_margin"
+        android:layout_marginBottom="@dimen/top_padding"
+        android:id="@+id/WifiLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wifi"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

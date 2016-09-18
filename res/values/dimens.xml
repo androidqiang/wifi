@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="top_padding">8dp</dimen>
+    <dimen name="top_margin">16dp</dimen>
+    <dimen name="sw_half">195dp</dimen>
+    <dimen name="padding_dialogue_tittle">20dp</dimen>
+    <dimen name="height_dialogue_messege">44dp</dimen>
+    <dimen name="margin_dialogue_messege">10dp</dimen>
+    <dimen name="margin_dialogue_btnlayout">20dp</dimen>
+</resources>
